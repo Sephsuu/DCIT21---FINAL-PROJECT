@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700;800;900&display=swap');
+
+html{
+	scroll-behavior: smooth;
+}
+button, body{
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+p{
+	line-height: 26px;
+}
+.fullcon{
+	width: 100%;
+}
+.con{
+	width: 1140px;
+	margin: auto;
+}
+.socmed{
+    position: relative;
+    left: 150px;
+    top: -42px;
+}
+.socmed i{
+    color: #6d0000;
+    font-size: 40px;
+    padding: 0 10px;
+}
+.socmed i:hover{
+    color: rgb(25, 0, 69);
+    transition: 0.5s;
+}
+
+.sectitle{
+	color: rgb(112, 0, 0);
+	width: 600px;
+	border-bottom: 3px solid black;
+	text-align: center;
+	font-size: 56px;
+	font-weight: 500;
+	margin: 0 auto 50px;
+	position: relative;
+	padding: 10px 0;
+	text-transform: uppercase;
+}
+section{
+	padding: 100px 0;
+	position: relative;
+}
+
+
+
+
+header{
+	width: 100%;
+	background-color: rgb(148, 0, 0);
+	position: fixed;
+	z-index: 2;
+}
+header .fullcon{
+	display: flex;
+	justify-content: space-between;
+}
+header .con .logo{
+	padding: 15px 0;
+	height: 30px;
+}
+header nav ul{
+	list-style-type: none;
+	position: relative;
+	left: 550px;
+}
+header nav ul li{
+	display: inline-block;
+}
+header nav ul li a{
+	display: inline-block;
+	height: 75px;
+	line-height: 75px;
+	padding: 0 15px;
+	text-decoration: none;
+	text-transform: capitalize;
+	font-size: 15px;
+	color: #fff;
+	transition: 0.5s;
+}
+header nav ul li a:hover{
+	background-color: rgb(160, 43, 53);
+}
+.banner{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/ban.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.banner h1{
+	margin-top: 230px;
+	display: inline-block;
+	font-size: 3.5rem;
+	color: #fff;
+	text-shadow: 0 0 2px black;
+	width: 50%;
+	line-height: 4.2rem;
+	font-weight: 100;
+	color: black;
+}
+.banner h1 span{
+	background-color: rgb(25, 0, 69);
+	display: inline-block;
+	line-height: 3.5rem;
+	padding: 0 15px;
+	font-weight: 600;
+	border-radius: 5px;
+	color: white;
+}
+.banner p{
+	color: black;
+	width: 50%;
+	text-shadow: 0 0 2px white;
+	margin-top: 10px;
+}
+.banner button{
+	background-color: rgb(121, 0, 0);
+	border: 0;
+	outline: none;
+	color: white;
+	padding: 10px 20px;
+	margin-top: 20px;
+	font-size: 14px;
+	border-radius: 10px;
+	font-weight: 600;
+	cursor: pointer;
+}
+.banner button:hover{
+	background-color: rgb(25, 0, 69);
+	transition: 0.5s;
+}
+/* -------------------------ABOUT--------------------------- */
+
+#about .cards{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 50px;
+	position: relative;
+	height: 400px;
+}
+#about .cards > div{
+	width: 350px;
+	background-color: black;
+	padding: 35px;
+	color: white;
+	text-align: center;
+	border-radius: 10px;
+	border: 1px solid white;
+}
+#about .cards > div:hover{
+	background-color: rgb(0, 0, 41);
+	width: 380px;
+	margin-top: -20px;
+	border-color: red;
+	padding: 55px;
+	height: auto;
+	transition: 0.8s;
+}
+#about .cards > div .title{
+	font-size: 24px;
+	font-weight: 600;
+	text-transform: uppercase;
+	border-bottom: 3px solid white;
+}
+#about .cards > div p{
+	font-size: 16px;
+	margin-top: 15px;
+}
+#about .cards > div button{
+	color: white;
+	background-color: rgb(196, 0, 0);
+	outline: none;
+	padding: 7px 15px;
+	margin-top: 15px;
+	font-size: 14px;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+#about .cards > div:hover button{
+	background-color: white;
+	color: red;
+	background-color: white;
+	font-weight: bolder;
+}
+/* ---------------------------PROGRAMS--------------------------- */
+.program{
+	background-color: lightgray;
+}
+.program .boxcon{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 50px;
+}
+.program .boxcon .box{
+	background-color: rgb(160, 160, 160);
+	text-align: center;
+	padding-bottom: 25px;
+	border-radius: 10px;
+	box-shadow: 0 0 3px 0 gray;
+	position: relative;
+	margin-bottom: 15px;
+}
+.program .boxcon .box .cardimage{
+	width: 100%;
+	height: 300px;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+	border-radius: 5px 5px 0 0;
+}
+.program .boxcon .box .cardimage::after{
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0; 
+	filter: grayscale(100%);
+	transition: 0.5s;
+}
+.program .boxcon .box:nth-child(1) .cardimage,
+.program .boxcon .box:nth-child(1) .cardimage::after{
+	background-image: url(images/healthS.jfif);
+}
+.program .boxcon .box:nth-child(2) .cardimage,
+.program .boxcon .box:nth-child(2) .cardimage::after{
+	background-image: url(images/bloodS.webp);
+}
+.program .boxcon .box:nth-child(3) .cardimage,
+.program .boxcon .box:nth-child(3) .cardimage::after{
+	background-image: url(images/IMG_6862.webp);
+}
+.program .boxcon .box:nth-child(4) .cardimage,
+.program .boxcon .box:nth-child(4) .cardimage::after{
+	background-image: url(images/dmS.jpg);
+}
+.program .boxcon .box:hover .cardimage::after{
+	top: 100%;
+}
+.program .boxcon .box .programtitle{
+	font-size: 18px;
+	margin-top: 15px;
+	font-weight: 600;
+	color: rgb(110, 0, 0);
+	border-bottom: 2px solid black;
+}
+.program .boxcon .box .target{
+	font-size: 14px;
+	font-weight: 600;
+	color: black;
+	margin-top: 10px;
+}
+.program .boxcon .box button{
+	position: absolute;
+	left: 50%;
+	background-color: rgb(110, 0, 0);
+	color: white;
+	transform: translate(-50%);
+	bottom: -15px;
+	border-radius: 50px;
+	padding: 7px 15px;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+}
+.program .boxcon .box button:hover{
+	background-color: white;
+	color: rgb(110, 0, 0);
+	font-weight: bolder;
+}
+/* ---------------------------------JOIN RED CROSS---------------------------- */
+.join{
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+}
+.join .videoplay{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	transform: translate(-50%, -50%);
+}
+.join .sectitle{
+	color: #fff;
+	text-shadow: 0 0 4px black;
+}
+.join .joincon{
+	align-items: center;
+	position: absolute;
+	left: 150px;
+	background-color: #6d000079;
+	width: 900px;
+	top: 380px;
+	color: white;
+	text-shadow: 0 0 4px black;
+	padding: 10px;
+}
+.join .joincon h3{
+	text-align: center;
+	font-size: 26px;
+	font-weight: bolder;
+}
+.join .joincon p{
+	font-size: 15px;
+	line-height: 30px;
+	margin: 10px 0 30px;
+}
+.join .joincon button{
+	position: relative;
+	left: 395px;
+	top: -40px;
+	font-size: 14px;
+	background-color: #6d0000;
+	border: 0;
+	color: white;
+	padding: 10px 25px;
+	font-weight: bolder;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+}
+/* -----------------------CONTACT---------------------- */
+.contact{
+	background-color: rgb(3, 0, 44);
+	color: #fff;
+	height: 60vh;
+}
+.contact .contacttitle{
+	font-size: 56px;
+	font-weight: 300;
+}
+.con .contacttitle span{
+	font-weight: 700;
+}
+.contact button{
+	padding: 7px 15px;
+	margin-top: 20px;
+	margin: 12px;
+	border: 0;
+	outline: none;
+	font-weight: 300;
+	font-size: 16px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.contact button.ways{
+	margin-right: 10px;
+	background-color: white;
+	color: black;
+}
+.contact button.ways:hover{
+	background-color: #6d0000;
+	font-weight: bolder;
+	color: white;
+}
+.contact button.services{
+	background-color: white;
+	color: black;
+}
+.contact button.services:hover{
+	background-color: #6d0000;
+	font-weight: bolder;
+	color: white;
+}
+footer{
+	background-color: rgb(120, 120, 120);
+	color: white;
+	padding: 50px 0;
+	font-size: 14px;
+}
+footer .con{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 50px;
+}
+footer .title{
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: uppercase;
+	width: 350px;
+	border-bottom: 2px solid;
+	margin-bottom: 20px;
+	padding: 0 0 5px 0;
+}
+footer p{
+	margin-bottom: 10px;
+	font-size: 12px;
+}
+footer .linkcon{
+	list-style-type: none;
+}
+footer .linkcon ul li a{
+	text-decoration: none;
+	color: white;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+.footsocmed i{
+    color: #ffffff;
+    font-size: 30px;
+    padding: 0 10px;
+	margin-top: 10px;
+}
+.footsocmed i:hover{
+    color: blue;
+	font-size: 40px;
+	transition: 1s;
+}
+footer .lettercon input{
+	color: white;
+	background-color: rgb(120, 120, 120);
+	border: 2px solid white;
+	outline: none;
+	padding: 10px 15px;
+	width: 100%;
+	margin-top: 10px;
+	border-radius: 30px;
+}
+
